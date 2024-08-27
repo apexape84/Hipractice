@@ -7,8 +7,5 @@ public class sh0827prac01 {
 
         System.out.println(people+"명");
         System.out.println((double)elevator/people+"kg");   // 평균을 정수로 표현하면 오차가 커지므로 실수로 변환
-
-
-
     }
 }
