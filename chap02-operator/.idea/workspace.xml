@@ -36,8 +36,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Gradle.chap02-operator [:com.ogiraffers.practice.jh0827prac01.main()].executor": "Run",
     "Gradle.chap02-operator [:com.ogiraffers.practice.sh0827prac02.main()].executor": "Run",
     "Gradle.chap02-operator [:com.ogiraffers.section01.arithmetic.application1.main()].executor": "Run",
+    "Gradle.chap02-operator [:com.ogiraffers.section01.arithmetic.application2.main()].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
@@ -65,7 +67,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1724737488290</updated>
-      <workItem from="1724737488843" duration="3910000" />
+      <workItem from="1724737488843" duration="7967000" />
     </task>
     <servers />
   </component>
