@@ -9,15 +9,15 @@ public class application2 {
         app2.methodC();
         System.out.println("main 끝");
     }
-    public void methodA() {
+    private void methodA() {
         System.out.println("method A 시작");
         System.out.println("method A 끝");
     };
-    public void methodB() {
+    private void methodB() {
         System.out.println("method B 시작");
         System.out.println("method B 끝");
     };
-    public void methodC() {
+    private void methodC() {
         System.out.println("method C 시작");
         System.out.println("method C 끝");
     };
