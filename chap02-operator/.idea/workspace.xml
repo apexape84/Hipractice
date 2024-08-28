@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf4c7f59-bec3-43ba-975e-789dfa28c3dc" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../Application/src/main/java/com/ogiraffers/practice/sh0827prac01.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Application/src/main/java/com/ogiraffers/practice/sh0827prac01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,31 +29,55 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2lEFmImd7OfHUZun7hD2h6osrmr" />
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.application1.executor": "Run",
+    "Application.application2.executor": "Run",
     "Gradle.chap02-operator [:com.ogiraffers.practice.jh0827prac01.main()].executor": "Run",
     "Gradle.chap02-operator [:com.ogiraffers.practice.ph0827prac01.main()].executor": "Run",
     "Gradle.chap02-operator [:com.ogiraffers.practice.sh0827prac02.main()].executor": "Run",
     "Gradle.chap02-operator [:com.ogiraffers.section01.arithmetic.application1.main()].executor": "Run",
     "Gradle.chap02-operator [:com.ogiraffers.section01.arithmetic.application2.main()].executor": "Run",
+    "Gradle.chap02-operator [:com.ogiraffers.section06.ternary.application1.main()].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Lecture/01_JAVA/01_lecture-source/Application",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "configurable.group.editor",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="application2" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="temurin-17 (3)" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.ogiraffers.section01.arithmetic.application2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ogiraffers.section01.arithmetic.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -69,10 +95,29 @@
       <option name="presentableId" value="Default" />
       <updated>1724737488290</updated>
       <workItem from="1724737488843" duration="10922000" />
+      <workItem from="1724804701918" duration="900000" />
+      <workItem from="1724806377522" duration="279000" />
+      <workItem from="1724806674314" duration="16000" />
+      <workItem from="1724806711752" duration="227000" />
+      <workItem from="1724807167280" duration="134000" />
+      <workItem from="1724807336348" duration="85000" />
+      <workItem from="1724807574048" duration="62000" />
+      <workItem from="1724807650160" duration="257000" />
+      <workItem from="1724808512479" duration="143000" />
+      <workItem from="1724808909131" duration="17000" />
+      <workItem from="1724808946113" duration="139000" />
+      <workItem from="1724809159053" duration="121000" />
+      <workItem from="1724810135904" duration="691000" />
+      <workItem from="1724810961857" duration="4577000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/chap02_operator$application2.ic" NAME="application2 Coverage Results" MODIFIED="1724807279136" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>com.ogiraffers.section01.arithmetic.*</FILTER>
+    </SUITE>
   </component>
 </project>
