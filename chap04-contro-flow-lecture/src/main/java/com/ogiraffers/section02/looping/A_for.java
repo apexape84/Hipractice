@@ -78,7 +78,7 @@ public class A_for {
     }
     public void snadClock(int a){
         int limit=a%2==0?a/2:a/2+1;
-        for(int i=0;i<a;i++){
+        for(int i=0;i<=a;i++){
             for(int j=0;j<i;j++){
                 System.out.print(" ");
             }

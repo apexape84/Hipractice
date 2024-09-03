@@ -1,4 +1,4 @@
-package com.ogiraffers.section02.looping;
+package com.ogiraffers.prac;
 
 public class A_while {
     public void incNum(int a){

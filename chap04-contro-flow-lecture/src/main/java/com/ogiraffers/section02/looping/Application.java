@@ -31,9 +31,9 @@ public class Application {
 
         //bbb.starPiramid(8);
 
-        aaa.snadClock(7);
+        //aaa.snadClock(30);
 
-        bbb.snadClock(7);
+        bbb.snadClock(101);
 
         //bbb.googoodan(9);
 
