@@ -91,45 +91,43 @@ public class A_while {
         }
     }
 
+
     public void snadClock(int a){
-        int limit=a%2==0?(a+1)/2:a/2;
+        int half=a%2==0?a/2:(a/2+1);
+        // 모래시계는 절반은 줄어들고, 나머지 반은 증가하므로 중간지점 찾기, 올림
+        int blank=0;    // 빈칸갯수
+        int star=a+2;   // 별 갯수-반복 전에 연산해야돼서 2를 더하고 빼면서 시작함
+        int i;  // 반복문용 임시 변수
 
-        int i=0;
-        int j;
-
-        while(a>0&&i<=limit){
-
-            j=0;
-            while(j<i){
+        while(blank<half){  // 빈칸 갯수가 중간점 까지 반복출력 하나
+            i=1;
+            blank++;    // 빈칸 갯수를 출력 이후에도 증가시키면 모래시계 중간이 안맞음
+            star-=2;    // 같은이유로 별 갯수도 먼저계산함
+            while(i<blank){
                 System.out.print(" ");
-                j++;
+                i++;
             }
-            j=0;
-            while(j<a){
+            i=0;
+            while(i<star){
                 System.out.print("*");
-                j++;
+                i++;
             }
-            i++;
-            a-=2;
             System.out.println();
         }
 
-        a+=2;
-        i-=2;
-        while(i>-1){
-            a+=2;
-            j=0;
-            while(j<i){
+        while(blank>1){
+            blank--;
+            i=1;
+            star+=2;
+            while(i<blank){
                 System.out.print(" ");
-                j++;
+                i++;
             }
-            j=0;
-            while(j<a){
+            i=0;
+            while(i<star){
                 System.out.print("*");
-                j++;
+                i++;
             }
-            i--;
-
             System.out.println();
         }
 
