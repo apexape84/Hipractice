@@ -1,6 +1,6 @@
 package com.ogiraffers.prac;
 
-public class AnalogClock {
+public class AnalogClock2 {
     public static void main(String[] args) {
         int h1=11;
         int m1=59;
@@ -29,17 +29,7 @@ public class AnalogClock {
         int sh=0;
 
         while(h1*3600+m1*60+s1<h2*3600+m2*60+s2){
-            if(mPos==hPos&&sPos<mPos&&sPos+720>mPos+12) //answer+=1;
-            {
-                smh += 1;
-                System.out.println("" + hPos / 3600 + "시" + mPos / 720 + "분" + sPos / 720 + "초" + " smh ");
-                System.out.println(hPos + "시" + " " + mPos + "분" + " " + sPos + "초" + " smh ");
-                System.out.print(hPos + "시" + " " + (mPos + 12) + "분" + " " + (sPos + 720) + "초" + " smh ");
-                System.out.println(smh);
-            }
-
-            else {
-                if (sPos <= mPos && ((sPos + 720) > (mPos + 12))){ //answer+=1;{
+                if (sPos <= mPos && ((sPos + 720) >= (mPos + 12))){ //answer+=1;{
                     sm += 1;
                     System.out.println(""+hPos/3600+"시"+mPos/720+"분"+sPos/720+"초"+" sm ");
                     System.out.println(hPos+"시"+" "+mPos+"분"+" "+sPos+"초"+" sm ");
@@ -47,7 +37,7 @@ public class AnalogClock {
                     System.out.println(sm);
                 }
 
-                if (sPos <= hPos && ((sPos + 720) > hPos + 1)) //answer+=1;
+                if (sPos <= hPos && ((sPos + 720) >= hPos + 1)) //answer+=1;
                 {
                     sh += 1;
                     System.out.println(""+hPos/3600+"시"+mPos/720+"분"+sPos/720+"초"+" sh ");
@@ -55,9 +45,20 @@ public class AnalogClock {
                     System.out.print(hPos+"시"+" "+(mPos+12)+"분"+" "+(sPos+720)+"초"+" sh ");
                     System.out.println(sh);
                 }
-            }
-            if(sPos%720==0)
-                s1++;
+                if(mPos==hPos||mPos+12==hPos+1) //answer+=1;
+                {
+                    smh -= 1;
+                    System.out.println("" + hPos / 3600 + "시" + mPos / 720 + "분" + sPos / 720 + "초" + " smh ");
+                    System.out.println(hPos + "시" + " " + mPos + "분" + " " + sPos + "초" + " smh ");
+                    System.out.print(hPos + "시" + " " + (mPos + 12) + "분" + " " + (sPos + 720) + "초" + " smh ");
+                    System.out.println(smh);
+                }
+
+            s1++;
+
+            System.out.println(""+hPos/3600+"시"+mPos/720+"분"+sPos/720+"초"+" - ");
+            System.out.println(hPos+"시"+" "+mPos+"분"+" "+sPos+"초"+" - ");
+            System.out.print(""+hPos/3600+"시"+mPos/720+"분"+sPos/720+"초"+" - ");
 
             hPos+=1;
             mPos+=12;
