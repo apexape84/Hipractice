@@ -28,7 +28,19 @@ public class AnalogClock {
         int mh=0;
         int sh=0;
 
+        System.out.println(""+hPos/3600+"시"+mPos/720+"분"+sPos/720+"초"+" end ");
+        System.out.println(hPos+"시"+" "+mPos+"분"+" "+sPos+"초"+" end ");
+        System.out.print(""+hPos/3600+"시"+mPos/720+"분"+sPos/720+"초"+" end ");
+        System.out.println(answer);
+
+        int nextHP = hPos+1;
+        int nextMPos = mPos+12;
+        int nextSPos = sPos+720;
+
         while(h1*3600+m1*60+s1<h2*3600+m2*60+s2){
+            System.out.println(s1);
+
+
             if(mPos==hPos&&sPos<mPos&&sPos+720>mPos+12) //answer+=1;
             {
                 smh += 1;
@@ -39,7 +51,7 @@ public class AnalogClock {
             }
 
             else {
-                if (sPos <= mPos && ((sPos + 720) > (mPos + 12))){ //answer+=1;{
+                if (sPos <= mPos && ((sPos + 720) >= (mPos + 12))){ //answer+=1;{
                     sm += 1;
                     System.out.println(""+hPos/3600+"시"+mPos/720+"분"+sPos/720+"초"+" sm ");
                     System.out.println(hPos+"시"+" "+mPos+"분"+" "+sPos+"초"+" sm ");
@@ -47,7 +59,7 @@ public class AnalogClock {
                     System.out.println(sm);
                 }
 
-                if (sPos <= hPos && ((sPos + 720) > hPos + 1)) //answer+=1;
+                if (sPos <= hPos && ((sPos + 720) >= hPos + 1)) //answer+=1;
                 {
                     sh += 1;
                     System.out.println(""+hPos/3600+"시"+mPos/720+"분"+sPos/720+"초"+" sh ");
@@ -56,12 +68,10 @@ public class AnalogClock {
                     System.out.println(sh);
                 }
             }
-            if(sPos%720==0)
+
                 s1++;
 
-            hPos+=1;
-            mPos+=12;
-            sPos+=720;
+
 
             hPos%=(720*60);
             mPos%=(720*60);
