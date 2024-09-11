@@ -14,7 +14,7 @@ public class Application1 {
          *   만들 수 있다.
          *  */
 
-        System.out.println("=========동물생성============");
+        /*System.out.println("=========동물생성============");
         동물 animal = new 동물();
         animal.먹기();
         animal.뛰기();
@@ -32,7 +32,7 @@ public class Application1 {
         frog.먹기();
         frog.뛰기();
         frog.울부짖기();
-        frog.낼름공격();
+        frog.낼름공격();*/
 
         /* comment.
          *   개구리와 너구리는 동물 클래스를 상속 받았다.
@@ -41,8 +41,8 @@ public class Application1 {
          *  */
 
         /* index. 1. 부모 타입으로 자식 인스턴스 주소값 저장 */
-        동물 a1 = new 개구리();
-        동물 a2 = new 너구리();
+        동물 f1 = new 개구리();
+        동물 n2 = new 너구리();
 
         // 동물은 동물이지 개구리가 아니다. IS-A 관계가 성립 되어야 한다.
 //        개구리 f1 = new 동물();
@@ -54,31 +54,37 @@ public class Application1 {
          *   동작하는 것을 의미한다.
          *  */
         System.out.println("=============동적 바인딩 확인==============");
-        a1.울부짖기();
-        a2.울부짖기();
+        f1.울부짖기();
+        n2.울부짖기();
 
+
+        System.out.println("=======instanceof===========");
+        System.out.println("a1 이 개구리 타입인 지 확인 : " + (f1 instanceof 개구리));
+        System.out.println("a1 이 너구리 타입인 지 확인 : " + (f1 instanceof 너구리));
+        System.out.println("a1 이 동물 타입인 지 확인 : " + (f1 instanceof 동물));
+        System.out.println("a1 이 Object 타입인 지 확인 : " + (f1 instanceof Object));
         /* comment.
          *   하지만 현재 레퍼런스 변수의 타입은
          *   동물이기 때문에 너구리와 개구리가 가진
          *   고유의 기능은 작동시킬 수 없다.
          * */
-//        a1.낼름공격();
+//        f1.낼름공격();
 
         /* index. 3. 타입 형변환 확인 */
         System.out.println("=========클래스타입 형변환========");
-        ((개구리)a1).낼름공격();
-        ((너구리)a2).깨물기();
+        ((개구리)f1).낼름공격();
+        ((너구리)n2).깨물기();
 
         // 주의사항 : 타입 형변환을 잘못하게 되면
         // 컴파일 시에는 문제 없지만, 런타임 시 ClassCast 오류 발생
-//        ((너구리)a1).깨물기();
+        ((너구리)n2).깨물기();
 
         /* index. 4 instanceof 연산자로 확인 */
         System.out.println("=======instanceof===========");
-        System.out.println("a1 이 개구리 타입인 지 확인 : " + (a1 instanceof 개구리));
-        System.out.println("a1 이 너구리 타입인 지 확인 : " + (a1 instanceof 너구리));
-        System.out.println("a1 이 동물 타입인 지 확인 : " + (a1 instanceof 동물));
-        System.out.println("a1 이 Object 타입인 지 확인 : " + (a1 instanceof Object));
+        System.out.println("a1 이 개구리 타입인 지 확인 : " + (f1 instanceof 개구리));
+        System.out.println("a1 이 너구리 타입인 지 확인 : " + (f1 instanceof 너구리));
+        System.out.println("a1 이 동물 타입인 지 확인 : " + (f1 instanceof 동물));
+        System.out.println("a1 이 Object 타입인 지 확인 : " + (f1 instanceof Object));
 
         /* index. 5. 클래스의 업캐스팅과 다운캐스팅 */
         /* comment.
