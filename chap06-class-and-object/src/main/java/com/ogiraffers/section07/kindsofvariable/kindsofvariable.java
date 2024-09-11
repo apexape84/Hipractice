@@ -5,5 +5,5 @@ public class kindsofvariable {
     * 필드==멤버변수==전역변수
     * 그 중 non-static 필드를 인스턴스변수라 함
     *  -> 인스턴스 생성 시점에 사용 가능한 변수를 의미
-    * static 필드는 정정필드,클래스변수 라고 함*/
+    * static 필드는 정적필드,클래스변수 라고 함*/
 }
