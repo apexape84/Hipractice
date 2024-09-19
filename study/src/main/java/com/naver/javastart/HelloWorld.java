@@ -1,4 +1,5 @@
 package com.naver.javastart;
+// 패키지는 클래스가 많아지면 찾기 쉽게 구분해주는 인덱스 같이
 
 public class HelloWorld {
     /* public : 공공장소 반대되는 것? 사유지
@@ -10,7 +11,7 @@ public class HelloWorld {
     //변수
 
     public static void main(String[] args) {
-        /*static : 고정해 놓고 쓰겠습니다.
+        /* static : 고정해 놓고 쓰겠습니다.
          * void : 비어있어요, 형태를 나타내야 하는 위치인데 형태가 없어서
          * 비워놓았다는 것을 적은것
          * main : 프로그램 시작합니다!!

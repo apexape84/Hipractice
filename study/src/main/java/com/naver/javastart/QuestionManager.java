@@ -1,4 +1,4 @@
-package com.naver.javastart;
+/*package com.naver.javastart;
 
 public class QuestionManager {
     new Question(0,"문자열을 사용할때 쓰는 변수타입은?","String");
@@ -18,4 +18,4 @@ public class QuestionManager {
     new Question(3,"다음중 객체지향 프로그래밍의 특징이 아닌것은? 1.캡슐화, 2.다형성, 3.상속, 4.응답성","4");
     new Question(3,"public class Academy (     ) Company{};에서 Academy가 Company를 상속받고 싶으면 넣어야 할 키워드는?","extends");
     new Question(3,"캡슐화를 할때 쓰는 접근제한자는?","private");
-}
+}*/
