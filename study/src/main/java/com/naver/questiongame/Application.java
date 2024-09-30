@@ -1,4 +1,4 @@
-package com.naver.javastart;
+package com.naver.questiongame;
 
 import java.util.Scanner;
 
